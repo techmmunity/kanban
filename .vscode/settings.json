@@ -1,0 +1,14 @@
+{
+	"cSpell.words": [
+		"Helvetica",
+		"Parens",
+		"builtins",
+		"camelcase",
+		"kanban",
+		"paren"
+	],
+	"material-icon-theme.folders.associations": {
+		"types": "typescript",
+		"interfaces": "typescript"
+	}
+}
