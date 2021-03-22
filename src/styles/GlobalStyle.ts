@@ -16,9 +16,9 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #fff;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #202124;
+    color: #fff;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
   }
 `;

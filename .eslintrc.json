@@ -66,6 +66,7 @@
 					"/styled-components/",
 					"module",
 					"/components/",
+					"/hooks/",
 					"/types/",
 					"/styles/",
 					["parent", "sibling", "index"]
