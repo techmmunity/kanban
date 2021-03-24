@@ -67,6 +67,8 @@
 					"module",
 					"/components/",
 					"/hooks/",
+					"/assets/",
+					"/temp/",
 					"/types/",
 					"/styles/",
 					["parent", "sibling", "index"]
