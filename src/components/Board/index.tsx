@@ -1,38 +1,25 @@
-import { DragDropContext, DropResult } from "react-beautiful-dnd";
-
-import { initialData } from "temp/initialData";
-
 import { Column } from "components/Column";
 import { Task } from "components/Task";
 
-import { usePersistedState } from "hooks/usePersistedState";
+import { columns } from "temp/initialData";
 
-import { Container } from "./styles";
+import { IColumn } from "types/interfaces/Column";
+import { ITask } from "types/interfaces/Task";
 
-export const Board = () => {
-	const [data, setData] = usePersistedState("data", initialData);
+import { Container, Columns, Tasks } from "./styles";
 
-	const handleOnDragEnd = (result: DropResult) => {
-		if (result.destination) {
-			const items = Array.from(data);
-			const [reorderedItem] = items.splice(result.source.index, 1);
-			items.splice(result.destination.index, 0, reorderedItem);
-
-			setData(items);
-		}
-	};
-
-	return (
-		<DragDropContext onDragEnd={handleOnDragEnd}>
-			<Container>
-				<Column>
-					{data.map(({ id, name }, index) => (
-						<Task key={id} id={id} index={index}>
-							{name}
-						</Task>
-					))}
+export const Board = () => (
+	<Container>
+		<Columns>
+			{columns.map(({ id, title, tasks }: IColumn) => (
+				<Column key={id} title={title}>
+					<Tasks>
+						{tasks.map(({ id, title }: ITask) => (
+							<Task key={id} title={title} />
+						))}
+					</Tasks>
 				</Column>
-			</Container>
-		</DragDropContext>
-	);
-};
+			))}
+		</Columns>
+	</Container>
+);

@@ -5,7 +5,9 @@ import { Container, Header, Title } from "./styles";
 export const Panel = () => (
 	<Container>
 		<Header>
-			<Title>Panel 1</Title>
+			<div>
+				<Title>Panel 1</Title>
+			</div>
 		</Header>
 		<Board />
 	</Container>

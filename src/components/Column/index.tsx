@@ -1,14 +1,15 @@
-import { Droppable } from "react-beautiful-dnd";
+import { Container, Title, Plus } from "./styles";
 
-import { Container } from "./styles";
+interface Props {
+	title: string;
+}
 
-export const Column: React.FC = ({ children }) => (
-	<Droppable droppableId="column">
-		{({ droppableProps, innerRef, placeholder }) => (
-			<Container {...droppableProps} ref={innerRef}>
-				{children}
-				{placeholder}
-			</Container>
-		)}
-	</Droppable>
+export const Column: React.FC<Props> = ({ title, children }) => (
+	<Container>
+		<Title>
+			<span>{title}</span>
+			<Plus />
+		</Title>
+		{children}
+	</Container>
 );
