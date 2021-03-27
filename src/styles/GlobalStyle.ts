@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import { Colors } from "assets/colors";
+
 export default createGlobalStyle`
 	 * {
     margin: 0;
@@ -16,9 +18,9 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #fff;
-    color: #000;
-    font-family: Arial, Helvetica, sans-serif;
+    background: ${Colors.background};
+    color: ${Colors.primary};
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
   }
 `;

@@ -4,13 +4,17 @@
   "license": "MIT",
   "dependencies": {
     "next": "latest",
+    "next-google-fonts": "^2.1.0",
     "react": "^17.0.1",
+    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.2.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
     "@types/node": "12.0.12",
     "@types/react": "16.8.23",
+    "@types/react-beautiful-dnd": "^13.0.0",
     "@types/react-dom": "16.8.4",
     "@types/styled-components": "5.0.1",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
