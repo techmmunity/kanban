@@ -1,4 +1,4 @@
-import { Container, Title, Plus } from "./styles";
+import { Container, Plus } from "./styles";
 
 interface Props {
 	title: string;
@@ -6,10 +6,12 @@ interface Props {
 
 export const Column: React.FC<Props> = ({ title, children }) => (
 	<Container>
-		<Title>
-			<span>{title}</span>
-			<Plus />
-		</Title>
-		{children}
+		<div>
+			<div>
+				<span>{title}</span>
+				<Plus />
+			</div>
+			{children}
+		</div>
 	</Container>
 );

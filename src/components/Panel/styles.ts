@@ -7,8 +7,10 @@ export const Header = styled.header`
 	align-items: center;
 	height: 5.6rem;
 	padding: 1rem;
-`;
 
-export const Title = styled.h1`
-	font-size: 2.8rem;
+	> div {
+		> h1 {
+			font-size: 2.8rem;
+		}
+	}
 `;

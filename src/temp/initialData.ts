@@ -1,30 +1,56 @@
 import { IColumn } from "types/interfaces/Column";
 import { ITask } from "types/interfaces/Task";
 
+export const tasks: Array<ITask> = [
+	{
+		id: "task1",
+		title: "Task 1",
+	},
+];
+
 export const task1: Array<ITask> = [
 	{
 		id: "task1",
 		title:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum nulla id orci accumsan, eu condimentum leo placerat. Curabitur lorem mauris, ornare quis turpis in, lacinia viverra erat. Morbi vel arcu in sem tempor vestibulum nec non leo. Aenean id semper diam, et congue eros. Fusce vitae nibh a purus blandit aliquam. Nam feugiat nulla ac porta volutpat. Donec nec eros pulvinar, viverra sapien non, euismod augue. Cras laoreet, quam vitae finibus facilisis, risus ipsum pretium purus, quis ultrices erat lacus ut lorem. Integer rutrum turpis sed auctor feugiat. Etiam at quam vitae purus eleifend rutrum at eu turpis. Nunc fermentum consequat elementum. Vivamus fermentum augue vel justo sollicitudin fermentum. Mauris quam nulla, varius in risus sed, aliquet suscipit turpis. Integer mattis porta arcu mattis aliquet. Nullam tristique porta vehicula. Ut at ante at odio imperdiet efficitur.",
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi ullam necessitatibus iste, eveniet assumenda repellat ad commodi rem nulla esse molestias dolor ducimus consequatur distinctio voluptatibus tempore optio consectetur.",
+		color: "#000000",
 	},
 	{
 		id: "task2",
-		title: "Task 3",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi ullam necessitatibus iste, eveniet assumenda repellat ad commodi rem nulla esse molestias dolor ducimus consequatur distinctio voluptatibus tempore optio consectetur.",
 	},
 	{
 		id: "task3",
 		title: "Task 3",
+	},
+	{
+		id: "task4",
+		title: "Task 4",
+	},
+	{
+		id: "task5",
+		title: "Task 5",
+	},
+	{
+		id: "task6",
+		title: "Task 6",
+	},
+	{
+		id: "task7",
+		title: "Task 7",
 	},
 ];
 
 export const task2: Array<ITask> = [
 	{
 		id: "task1",
-		title: "Task 1 ",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi ullam necessitatibus iste, eveniet assumenda repellat ad commodi rem nulla esse molestias dolor ducimus consequatur distinctio voluptatibus tempore optio consectetur.",
 	},
 	{
 		id: "task2",
-		title: "Task 3",
+		title: "Task 2",
 	},
 	{
 		id: "task3",
@@ -35,7 +61,11 @@ export const task2: Array<ITask> = [
 export const task3: Array<ITask> = [
 	{
 		id: "task1",
-		title: "Task 1 ",
+		title: "Task 1",
+	},
+	{
+		id: "task2",
+		title: "Task 2",
 	},
 ];
 

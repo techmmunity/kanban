@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-import { Colors } from "assets/colors";
+import { isDarkColor } from "assets/colors";
 
-export const Container = styled.li`
-	background: ${Colors["background-task"]};
-	color: ${Colors.secondary};
+export const Container = styled.li<{ color?: string }>`
+	background: ${({ color }) => color || "#ffffff"};
+	color: ${({ color }) =>
+		color && isDarkColor(color) ? "#ffffff" : "#000000"};
 	border-radius: 3px;
 	padding: 0.8rem 0.5rem;
-	margin: 1rem 0.25rem;
+	margin: 0.8rem 0;
 
-	&:first-child,
-	&:last-child {
-		margin: 0 0.25rem;
+	&:nth-child(1) {
+		margin: 0 0 0.8rem 0;
 	}
 `;

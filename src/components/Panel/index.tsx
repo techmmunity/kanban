@@ -1,12 +1,12 @@
 import { Board } from "components/Board";
 
-import { Container, Header, Title } from "./styles";
+import { Container, Header } from "./styles";
 
 export const Panel = () => (
 	<Container>
 		<Header>
 			<div>
-				<Title>Panel 1</Title>
+				<h1>Panel 1</h1>
 			</div>
 		</Header>
 		<Board />
