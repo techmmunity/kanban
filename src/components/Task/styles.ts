@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
-import { isDarkColor } from "assets/colors";
+import { Colors } from "assets/colors";
+import { isDarkColor } from "helpers/assets/isDarkColor";
 
 export const Container = styled.li<{ color?: string }>`
-	background: ${({ color }) => color || "#ffffff"};
+	background: ${({ color }) => color || Colors.primary};
 	color: ${({ color }) =>
-		color && isDarkColor(color) ? "#ffffff" : "#000000"};
+		color && isDarkColor(color) ? Colors.primary : Colors.secondary};
 	border-radius: 3px;
 	padding: 0.8rem 0.5rem;
 	margin: 0.8rem 0;
