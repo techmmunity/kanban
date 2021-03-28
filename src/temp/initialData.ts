@@ -87,7 +87,7 @@ export const columns: Array<IColumn> = [
 		tasks,
 	},
 	{
-		id: "column4",
+		id: "column5",
 		title: "Column 5",
 		tasks,
 	},
