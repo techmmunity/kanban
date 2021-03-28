@@ -57,11 +57,11 @@ export const task2: Array<ITask> = [
 export const task3: Array<ITask> = [
 	{
 		id: "task1",
-		title: "Task 1",
+		title: "# Task 1",
 	},
 	{
 		id: "task2",
-		title: "Task 2",
+		title: "**Task 2**",
 	},
 ];
 
