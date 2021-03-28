@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.section``;
+export const Container = styled.section`
+	min-height: 100vh;
+	height: 100vh;
+	max-height: 100vh;
+	background: url("images/background.webp");
+	background-position: center;
+	background-size: cover;
+`;
 
 export const Header = styled.header`
 	display: flex;
