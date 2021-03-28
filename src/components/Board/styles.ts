@@ -44,30 +44,28 @@ export const Tasks = styled.ul`
 	}
 `;
 
-export const CreateColumn = styled.div`
-	max-height: 100%;
+export const CreateColumn = styled.button`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 27rem;
+	width: 27rem;
+	max-width: 27rem;
+	background: ${Colors["background-create-column"]};
+	color: ${Colors.primary};
+	font-size: 1.5rem;
+	border: 0;
+	border-radius: 5px;
+	outline: transparent;
+	padding: 1rem 0;
+	margin: 1rem 0.5rem;
+	transition: 0.2s background-color ease;
+	cursor: pointer;
 
-	> button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-width: 27rem;
-		width: 27rem;
-		max-width: 27rem;
-		background: ${Colors["background-create-column"]};
-		color: ${Colors.primary};
-		font-size: 1.5rem;
-		border: 2px solid ${Colors.primary};
-		border-radius: 5px;
-		outline: transparent;
-		padding: 1rem;
-		margin: 1rem 0.5rem;
-		transition: 0.2s background-color ease;
-		cursor: pointer;
-
-		&:hover {
-			background: ${Colors["background-create-column-hover"]};
-		}
+	&:hover,
+	&:focus,
+	&:active {
+		background: ${Colors["background-create-column-hover"]};
 	}
 `;
 
@@ -79,14 +77,16 @@ export const CreateTask = styled.button`
 	background: ${Colors["background-create-task"]};
 	color: ${Colors.primary};
 	font-size: 1.5rem;
-	border: 2px solid ${Colors.primary};
+	border: 0;
 	border-radius: 5px;
 	outline: transparent;
 	padding: 1rem;
-	transition: 0.2s background-color ease;
+	transition: 0.2s background-color ease, 0.2s color ease;
 	cursor: pointer;
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		background: ${Colors["background-create-task-hover"]};
 	}
 `;

@@ -34,9 +34,9 @@ export const Board = () => {
 						</Tasks>
 					</Column>
 				))}
-				<CreateColumn>
-					<button>Create Column</button>
-				</CreateColumn>
+				<div>
+					<CreateColumn>Create Column</CreateColumn>
+				</div>
 			</Columns>
 		</Container>
 	);
