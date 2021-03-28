@@ -13,16 +13,15 @@ export const task1: Array<ITask> = [
 		id: "task1",
 		title:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi ullam necessitatibus iste, eveniet assumenda repellat ad commodi rem nulla esse molestias dolor ducimus consequatur distinctio voluptatibus tempore optio consectetur.",
-		color: "#000000",
 	},
 	{
 		id: "task2",
-		title:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi ullam necessitatibus iste, eveniet assumenda repellat ad commodi rem nulla esse molestias dolor ducimus consequatur distinctio voluptatibus tempore optio consectetur.",
+		title: "Task 2",
 	},
 	{
 		id: "task3",
-		title: "Task 3",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi ullam necessitatibus iste, eveniet assumenda repellat ad commodi rem nulla esse molestias dolor ducimus consequatur distinctio voluptatibus tempore optio consectetur.",
 	},
 	{
 		id: "task4",
@@ -34,11 +33,8 @@ export const task1: Array<ITask> = [
 	},
 	{
 		id: "task6",
-		title: "Task 6",
-	},
-	{
-		id: "task7",
-		title: "Task 7",
+		title:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi ullam necessitatibus iste, eveniet assumenda repellat ad commodi rem nulla esse molestias dolor ducimus consequatur distinctio voluptatibus tempore optio consectetur.",
 	},
 ];
 
@@ -84,5 +80,15 @@ export const columns: Array<IColumn> = [
 		id: "column3",
 		title: "Column 3",
 		tasks: task3,
+	},
+	{
+		id: "column4",
+		title: "Column 4",
+		tasks,
+	},
+	{
+		id: "column4",
+		title: "Column 5",
+		tasks,
 	},
 ];
