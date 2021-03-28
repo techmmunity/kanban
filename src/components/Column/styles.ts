@@ -18,16 +18,16 @@ export const Container = styled.li`
 		max-height: 100%;
 		background: ${Colors["background-column"]};
 		border-radius: 7px;
-		padding: 1rem;
+		padding: 0 1rem 2rem 1rem;
 
 		> div {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding-bottom: 1rem;
+			padding: 1rem 0;
 
 			> span {
-				font-size: 2.4rem;
+				font-size: 2.2rem;
 				font-weight: bold;
 			}
 		}
