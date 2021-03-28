@@ -1,3 +1,5 @@
+import ReactMarkdown from "react-markdown";
+
 import { Container } from "./styles";
 
 interface Props {
@@ -7,6 +9,18 @@ interface Props {
 
 export const Task: React.FC<Props> = ({ title, color }) => (
 	<Container color={color}>
-		<p>{title}</p>
+		<ReactMarkdown
+			allowedTypes={[
+				"text",
+				"break",
+				"paragraph",
+				"strong",
+				"link",
+				"inlineCode",
+			]}
+			unwrapDisallowed
+		>
+			{title}
+		</ReactMarkdown>
 	</Container>
 );
