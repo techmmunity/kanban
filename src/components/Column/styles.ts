@@ -14,7 +14,7 @@ export const Container = styled.li`
 		min-width: 27rem;
 		width: 27rem;
 		max-width: 27rem;
-		min-height: 7rem;
+		min-height: 10rem;
 		max-height: 100%;
 		background: ${Colors["background-column"]};
 		border-radius: 7px;
@@ -24,7 +24,6 @@ export const Container = styled.li`
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			height: 3.5rem;
 			padding-bottom: 1rem;
 
 			> span {
