@@ -15,7 +15,7 @@ export const Columns = styled.ul`
 	overflow-x: auto;
 
 	::-webkit-scrollbar {
-		width: 5px;
+		width: 12px;
 		height: 12px;
 	}
 
@@ -26,10 +26,6 @@ export const Columns = styled.ul`
 
 	::-webkit-scrollbar-corner {
 		background: transparent;
-	}
-
-	> div {
-		max-height: 100%;
 	}
 `;
 
