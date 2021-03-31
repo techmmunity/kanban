@@ -18,6 +18,7 @@ export const Task: React.FC<Props> = ({ title, color }) => (
 				"link",
 				"inlineCode",
 			]}
+			skipHtml
 			unwrapDisallowed
 		>
 			{title}
