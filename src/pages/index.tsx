@@ -1,10 +1,15 @@
-import { Panel } from "components/Panel";
+import { Boards } from "components/Boards";
 
-import { Container } from "styles/pages/Home";
+import { Container, Title } from "styles/pages/Home";
 
 const Home = () => (
 	<Container>
-		<Panel />
+		<section>
+			<div>
+				<Title>Boards</Title>
+				<Boards />
+			</div>
+		</section>
 	</Container>
 );
 
