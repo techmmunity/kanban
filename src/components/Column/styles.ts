@@ -27,7 +27,7 @@ export const Container = styled.li`
 			padding: 1rem 0;
 
 			> span {
-				font-size: 2.2rem;
+				font-size: 2rem;
 				font-weight: bold;
 			}
 		}
