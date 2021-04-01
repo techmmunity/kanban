@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { Colors } from "assets/colors";
 
 export const Container = styled.div`
-	min-height: calc(100vh - 5.6rem);
-	height: calc(100vh - 5.6rem);
-	max-height: calc(100vh - 5.6rem);
+	min-height: calc(100vh - 4.2rem);
+	height: calc(100vh - 4.2rem);
+	max-height: calc(100vh - 4.2rem);
 `;
 
 export const Columns = styled.ul`
