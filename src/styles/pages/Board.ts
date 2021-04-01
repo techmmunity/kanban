@@ -1,8 +1,14 @@
 import { BiHomeAlt } from "react-icons/bi";
+import { FiSettings } from "react-icons/fi";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import { Colors } from "assets/colors";
+
+const iconCSS = css`
+	width: 2.25rem;
+	height: 2.25rem;
+`;
 
 export const Container = styled.main<{ url_image?: string }>`
 	> section {
@@ -16,17 +22,13 @@ export const Container = styled.main<{ url_image?: string }>`
 		> header {
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 			height: 4.2rem;
 			padding: 1rem 0.5rem;
 
 			> div {
 				display: flex;
 				align-items: center;
-
-				> h1 {
-					font-size: 2.2rem;
-					margin: 0 0.5rem;
-				}
 			}
 		}
 	}
@@ -39,6 +41,7 @@ export const Home = styled.a`
 	background: ${Colors["background-home"]};
 	color: ${Colors.primary};
 	border-radius: 3px;
+	text-decoration: none;
 	padding: 0.5rem;
 	margin: 0 0.5rem 0 0;
 	transition: background-color 0.2s ease;
@@ -52,6 +55,35 @@ export const Home = styled.a`
 `;
 
 export const HomeIcon = styled(BiHomeAlt)`
-	width: 2.25rem;
-	height: 2.25rem;
+	${iconCSS}
+`;
+
+export const Title = styled.h1`
+	font-size: 2.2rem;
+	margin: 0 0.5rem;
+`;
+
+export const Settings = styled.button`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: ${Colors["background-settings"]};
+	color: ${Colors.primary};
+	border: 0;
+	border-radius: 3px;
+	outline: transparent;
+	padding: 0.5rem;
+	margin: 0 0 0 0.5rem;
+	transition: background-color 0.2s ease;
+	cursor: pointer;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background: ${Colors["background-settings-hover"]};
+	}
+`;
+
+export const SettingsIcon = styled(FiSettings)`
+	${iconCSS}
 `;

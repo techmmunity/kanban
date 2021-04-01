@@ -11,6 +11,8 @@ export const Colors = {
 	"background-create-task-hover": "#5aac44",
 	"background-home": "#16161890",
 	"background-home-hover": "#0079bf",
+	"background-settings": "#16161890",
+	"background-settings-hover": "#0079bf",
 	scroll: "#bdbdbe50",
 	white: "#ffffff",
 	black: "#000000",

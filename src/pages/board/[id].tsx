@@ -7,7 +7,14 @@ import { Painel } from "components/Painel";
 
 import { boards } from "temp/initialData/boards";
 
-import { Container, Home, HomeIcon } from "styles/pages/Board";
+import {
+	Container,
+	Home,
+	HomeIcon,
+	Title,
+	Settings,
+	SettingsIcon,
+} from "styles/pages/Board";
 
 const Board = () => {
 	const router = useRouter();
@@ -35,7 +42,12 @@ const Board = () => {
 									<HomeIcon />
 								</Home>
 							</Link>
-							<h1>{title}</h1>
+							<Title>{title}</Title>
+						</div>
+						<div>
+							<Settings>
+								<SettingsIcon />
+							</Settings>
 						</div>
 					</header>
 					<Painel columns={columns} />
