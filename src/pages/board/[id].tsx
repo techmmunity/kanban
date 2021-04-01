@@ -1,12 +1,13 @@
 import Error from "next/error";
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 import { Painel } from "components/Painel";
 
 import { boards } from "temp/initialData/boards";
 
-import { Container } from "styles/pages/Board";
+import { Container, Home, HomeIcon } from "styles/pages/Board";
 
 const Board = () => {
 	const router = useRouter();
@@ -29,6 +30,11 @@ const Board = () => {
 				<section>
 					<header>
 						<div>
+							<Link href="/">
+								<Home>
+									<HomeIcon />
+								</Home>
+							</Link>
 							<h1>{title}</h1>
 						</div>
 					</header>
