@@ -45,9 +45,11 @@ const Board = () => {
 							<Title>{title}</Title>
 						</div>
 						<div>
-							<Settings>
-								<SettingsIcon />
-							</Settings>
+							<Link href="/settings">
+								<Settings>
+									<SettingsIcon />
+								</Settings>
+							</Link>
 						</div>
 					</header>
 					<Painel columns={columns} />

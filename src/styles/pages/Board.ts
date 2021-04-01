@@ -63,15 +63,13 @@ export const Title = styled.h1`
 	margin: 0 0.5rem;
 `;
 
-export const Settings = styled.button`
+export const Settings = styled.a`
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: ${Colors["background-settings"]};
 	color: ${Colors.primary};
-	border: 0;
 	border-radius: 3px;
-	outline: transparent;
 	padding: 0.5rem;
 	margin: 0 0 0 0.5rem;
 	transition: background-color 0.2s ease;
