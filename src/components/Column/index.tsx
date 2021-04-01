@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 import { stopPropagationHorizontalScrolling } from "helpers/global/stopPropagationHorizontalScrolling";
 
-import { Container, Plus } from "./styles";
+import { Container, Plus, PlusIcon } from "./styles";
 
 interface Props {
 	title: string;
@@ -22,7 +22,9 @@ export const Column: React.FC<Props> = ({ title, children }) => {
 			<div ref={containerRef}>
 				<div>
 					<span>{title}</span>
-					<Plus />
+					<Plus>
+						<PlusIcon />
+					</Plus>
 				</div>
 				{children}
 			</div>

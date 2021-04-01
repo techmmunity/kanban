@@ -34,8 +34,18 @@ export const Container = styled.li`
 	}
 `;
 
-export const Plus = styled(FaPlus)`
+export const Plus = styled.button`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+	color: ${Colors.primary};
+	border: 0;
+	outline: transparent;
+	cursor: pointer;
+`;
+
+export const PlusIcon = styled(FaPlus)`
 	width: 2rem;
 	height: 2rem;
-	cursor: pointer;
 `;
