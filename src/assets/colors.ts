@@ -9,6 +9,8 @@ export const Colors = {
 	"background-task": "#fafafa",
 	"background-create-task": "#20202290",
 	"background-create-task-hover": "#5aac44",
+	"background-home": "#16161890",
+	"background-home-hover": "#0079bf",
 	scroll: "#bdbdbe50",
 	white: "#ffffff",
 	black: "#000000",
