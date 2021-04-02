@@ -1,4 +1,4 @@
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { NodeType } from "react-markdown";
 
 import { Container } from "./styles";
 
@@ -7,21 +7,25 @@ interface Props {
 	color?: string;
 }
 
-export const Task: React.FC<Props> = ({ title, color }) => (
-	<Container color={color}>
-		<ReactMarkdown
-			allowedTypes={[
-				"text",
-				"break",
-				"paragraph",
-				"strong",
-				"link",
-				"inlineCode",
-			]}
-			skipHtml
-			unwrapDisallowed
-		>
-			{title}
-		</ReactMarkdown>
-	</Container>
-);
+export const Task: React.FC<Props> = ({ title, color }) => {
+	const allowedMarkdownTypes: Array<NodeType> = [
+		"text",
+		"break",
+		"paragraph",
+		"strong",
+		"link",
+		"inlineCode",
+	];
+
+	return (
+		<Container color={color}>
+			<ReactMarkdown
+				allowedTypes={allowedMarkdownTypes}
+				skipHtml
+				unwrapDisallowed
+			>
+				{title}
+			</ReactMarkdown>
+		</Container>
+	);
+};

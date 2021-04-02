@@ -11,7 +11,11 @@ export const Container = styled.li<{ color?: string }>`
 	padding: 0.8rem 0.5rem;
 	margin: 0.8rem 0;
 
-	&:nth-child(1) {
-		margin: 0 0 0.8rem 0;
+	&:last-child {
+		margin: 0.8rem 0 0 0;
+	}
+
+	&:first-child {
+		margin: 0;
 	}
 `;
