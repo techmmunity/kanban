@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+import { useState, useMemo } from "react";
+
+import { formatTitle } from "./helpers/formatTitle";
 import { getBoardsToFill } from "./helpers/getBoardsToFill";
 
 import { boards } from "temp/initialData/boards";
@@ -9,19 +12,20 @@ import { IBoard } from "types/interfaces/Board";
 import { Container, Board, GhostBoard } from "./styles";
 
 export const Boards = () => {
-	const ghostBoards = getBoardsToFill(boards);
+	const [state] = useState<Array<IBoard>>(boards);
+
+	const ghostBoards = useMemo(
+		() => getBoardsToFill(state).map(({ key }) => <GhostBoard key={key} />),
+		[state],
+	);
 
 	return (
 		<Container>
-			{boards.map(({ id, title, url_image }: IBoard) => {
-				let newTitle = title;
-
-				if (newTitle.length > 35) {
-					newTitle = newTitle.substring(0, 32) + "...";
-				}
+			{boards.map(({ id, title, background }: IBoard) => {
+				const newTitle = formatTitle(title);
 
 				return (
-					<Board key={id} url_image={url_image}>
+					<Board key={id} background={background}>
 						<Link href={`/board/${id}`}>
 							<a>
 								<div>
@@ -32,9 +36,7 @@ export const Boards = () => {
 					</Board>
 				);
 			})}
-			{ghostBoards.map(({ key }) => (
-				<GhostBoard key={key} />
-			))}
+			{ghostBoards}
 		</Container>
 	);
 };

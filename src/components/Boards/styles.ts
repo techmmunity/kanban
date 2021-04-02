@@ -9,25 +9,25 @@ export const Container = styled.ul`
 	list-style: none;
 `;
 
-export const Board = styled.li<{ url_image?: string }>`
+export const Board = styled.li<{ background?: string }>`
 	> a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 25rem;
 		height: 15rem;
-		background: ${({ url_image }) =>
-			url_image ? `url(${url_image})` : Colors["background-board"]};
+		background: ${({ background }) =>
+			background ? `url(${background})` : Colors["background-board"]};
 		background-position: center;
 		background-size: cover;
 		color: ${Colors.primary};
 		border-radius: 7px;
+		outline: transparent;
 		text-align: center;
 		text-decoration: none;
 		transform: scale(0.9);
 		transition: transform 0.2s ease;
 		cursor: pointer;
-		outline: transparent;
 
 		&:hover,
 		&:focus,
@@ -39,14 +39,10 @@ export const Board = styled.li<{ url_image?: string }>`
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			min-width: 100%;
 			width: 100%;
-			max-width: 100%;
-			min-height: 100%;
 			height: 100%;
-			max-height: 100%;
-			background: #00000080;
-			border-radius: 7px;
+			background: ${`${Colors.black}80`};
+			border-radius: inherit;
 
 			> span {
 				font-size: 2.4rem;
