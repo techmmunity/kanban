@@ -4,10 +4,11 @@ import { Container } from "./styles";
 
 interface Props {
 	title: string;
+	code: string;
 	color?: string;
 }
 
-export const Task: React.FC<Props> = ({ title, color }) => {
+export const Task: React.FC<Props> = ({ title, code, color }) => {
 	const allowedMarkdownTypes: Array<NodeType> = [
 		"text",
 		"break",
@@ -18,7 +19,7 @@ export const Task: React.FC<Props> = ({ title, color }) => {
 	];
 
 	return (
-		<Container color={color}>
+		<Container id={code} color={color}>
 			<ReactMarkdown
 				allowedTypes={allowedMarkdownTypes}
 				skipHtml
