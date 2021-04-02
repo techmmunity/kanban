@@ -5,10 +5,8 @@ import { Container, Title } from "styles/pages/Home";
 const Home = () => (
 	<Container>
 		<section>
-			<div>
-				<Title>Boards</Title>
-				<Boards />
-			</div>
+			<Title>Boards</Title>
+			<Boards />
 		</section>
 	</Container>
 );
