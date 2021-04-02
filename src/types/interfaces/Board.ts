@@ -1,8 +1,8 @@
 import { IColumn } from "./Column";
 
 export interface IBoard {
-	id: string;
+	id: string | number;
 	title: string;
-	url_image?: string;
+	background: string;
 	columns: Array<IColumn>;
 }
