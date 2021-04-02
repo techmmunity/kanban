@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 import { stopPropagationHorizontalScrolling } from "helpers/global/stopPropagationHorizontalScrolling";
 
-import { Container, Plus, PlusIcon } from "./styles";
+import { Container, Title } from "./styles";
 
 interface Props {
 	title: string;
@@ -15,17 +15,14 @@ export const Column: React.FC<Props> = ({ title, children }) => {
 		if (containerRef.current) {
 			stopPropagationHorizontalScrolling(containerRef.current);
 		}
-	}, []);
+	}, [containerRef]);
 
 	return (
 		<Container>
 			<div ref={containerRef}>
-				<div>
+				<Title>
 					<span>{title}</span>
-					<Plus>
-						<PlusIcon />
-					</Plus>
-				</div>
+				</Title>
 				{children}
 			</div>
 		</Container>

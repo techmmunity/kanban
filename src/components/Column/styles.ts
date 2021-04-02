@@ -1,5 +1,3 @@
-import { FaPlus } from "react-icons/fa";
-
 import styled from "styled-components";
 
 import { Colors } from "assets/colors";
@@ -18,34 +16,17 @@ export const Container = styled.li`
 		max-height: 100%;
 		background: ${Colors["background-column"]};
 		border-radius: 7px;
-		padding: 0 1rem 2rem 1rem;
-
-		> div {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 1rem 0;
-
-			> span {
-				font-size: 2rem;
-				font-weight: bold;
-			}
-		}
+		padding: 0 1rem 1rem 1rem;
 	}
 `;
 
-export const Plus = styled.button`
+export const Title = styled.div`
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	background: transparent;
-	color: ${Colors.primary};
-	border: 0;
-	outline: transparent;
-	cursor: pointer;
-`;
+	padding: 1rem 0;
 
-export const PlusIcon = styled(FaPlus)`
-	width: 2rem;
-	height: 2rem;
+	> span {
+		font-size: 2rem;
+		font-weight: bold;
+	}
 `;
