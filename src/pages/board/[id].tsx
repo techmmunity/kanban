@@ -3,56 +3,48 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import { Painel } from "components/Painel";
+import { ColumnsContainer } from "components/ColumnsContainer";
 
 import { boards } from "temp/initialData/boards";
 
-import {
-	Container,
-	Home,
-	HomeIcon,
-	Title,
-	Settings,
-	SettingsIcon,
-} from "styles/pages/Board";
+import { Container, HomeIcon, Title, SettingsIcon } from "styles/pages/Board";
 
 const Board = () => {
 	const router = useRouter();
 	const id = Number(router.query.id) - 1;
-
 	const board = boards[id];
 
 	if (!board) {
 		return <Error statusCode={404} />;
 	}
 
-	const { title, url_image, columns } = board;
+	const { title, background, columns } = board;
 
 	return (
 		<>
 			<Head>
-				<title>{title} · Kanban</title>
+				<title>{title} | Kanban</title>
 			</Head>
-			<Container url_image={url_image}>
+			<Container background={background}>
 				<section>
 					<header>
 						<div>
 							<Link href="/">
-								<Home>
+								<a>
 									<HomeIcon />
-								</Home>
+								</a>
 							</Link>
 							<Title>{title}</Title>
 						</div>
 						<div>
-							<Link href="/settings">
-								<Settings>
+							<Link href={`${id}/settings`}>
+								<a>
 									<SettingsIcon />
-								</Settings>
+								</a>
 							</Link>
 						</div>
 					</header>
-					<Painel columns={columns} />
+					<ColumnsContainer columns={columns} />
 				</section>
 			</Container>
 		</>
