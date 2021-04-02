@@ -9,14 +9,24 @@ import { boards } from "temp/initialData/boards";
 
 import { IBoard } from "types/interfaces/Board";
 
-import { Container, Board, GhostBoard } from "./styles";
+import { Container, Board, CreateBoard, PlusIcon } from "./styles";
 
 export const Boards = () => {
 	const [state] = useState<Array<IBoard>>(boards);
 
-	const ghostBoards = useMemo(
-		() => getBoardsToFill(state).map(({ key }) => <GhostBoard key={key} />),
-		[state],
+	const boardsLength = state.length;
+
+	const createBoards = useMemo(
+		() =>
+			getBoardsToFill(boardsLength).map(({ key }) => (
+				<li key={key}>
+					<CreateBoard>
+						<PlusIcon />
+						<span>Add Board</span>
+					</CreateBoard>
+				</li>
+			)),
+		[boardsLength],
 	);
 
 	return (
@@ -36,7 +46,7 @@ export const Boards = () => {
 					</Board>
 				);
 			})}
-			{ghostBoards}
+			{createBoards}
 		</Container>
 	);
 };

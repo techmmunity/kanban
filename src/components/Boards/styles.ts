@@ -1,3 +1,5 @@
+import { FaPlus } from "react-icons/fa";
+
 import styled from "styled-components";
 
 import { Colors } from "assets/colors";
@@ -53,11 +55,18 @@ export const Board = styled.li<{ background?: string }>`
 	}
 `;
 
-export const GhostBoard = styled.li`
+export const CreateBoard = styled.button`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 25rem;
 	height: 15rem;
 	background: ${Colors["background-board"]};
+	color: ${Colors.primary};
+	border: 0;
 	border-radius: 7px;
+	outline: transparent;
 	transform: scale(0.9);
 	transition: transform 0.2s ease;
 	cursor: pointer;
@@ -67,4 +76,15 @@ export const GhostBoard = styled.li`
 	&:active {
 		transform: scale(1);
 	}
+
+	> span {
+		font-size: 2.4rem;
+		font-weight: bold;
+	}
+`;
+
+export const PlusIcon = styled(FaPlus)`
+	width: 3rem;
+	height: 3rem;
+	margin-bottom: 1rem;
 `;
