@@ -34,7 +34,9 @@ const Board = () => {
 									<HomeIcon />
 								</a>
 							</Link>
-							<Title>{title}</Title>
+							<Title>
+								<h1>{title}</h1>
+							</Title>
 						</div>
 						<div>
 							<Link href={`${id}/settings`}>

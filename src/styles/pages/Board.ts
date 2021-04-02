@@ -1,14 +1,9 @@
 import { BiHomeAlt } from "react-icons/bi";
 import { FiSettings } from "react-icons/fi";
 
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import { Colors } from "assets/colors";
-
-const iconCSS = css`
-	width: 2.25rem;
-	height: 2.25rem;
-`;
 
 export const Container = styled.main<{ background?: string }>`
 	> section {
@@ -57,8 +52,8 @@ export const Container = styled.main<{ background?: string }>`
 					color: ${Colors.primary};
 					border-radius: 3px;
 					outline: transparent;
-					padding: 0.5rem;
-					margin: 0 0 0 0.5rem;
+					padding: 0.7rem;
+					margin: 0 0.5rem;
 					transition: background-color 0.2s ease;
 					cursor: pointer;
 
@@ -74,14 +69,27 @@ export const Container = styled.main<{ background?: string }>`
 `;
 
 export const HomeIcon = styled(BiHomeAlt)`
-	${iconCSS}
+	width: 2.4rem;
+	height: 2.4rem;
+	margin: -0.1rem;
 `;
 
-export const Title = styled.h1`
-	font-size: 2.2rem;
-	margin: 0 0.5rem;
+export const Title = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: ${Colors["background-title"]};
+	color: ${Colors.primary};
+	border-radius: 3px;
+	outline: transparent;
+	padding: 0.7rem 1.25rem;
+
+	> h1 {
+		font-size: 1.8rem;
+	}
 `;
 
 export const SettingsIcon = styled(FiSettings)`
-	${iconCSS}
+	width: 2.25rem;
+	height: 2.25rem;
 `;
