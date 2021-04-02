@@ -17,6 +17,8 @@ export const Columns = styled.ul`
 	::-webkit-scrollbar {
 		width: 12px;
 		height: 12px;
+		background: ${Colors["scroll-scrollbar"]};
+		border-radius: 3px;
 	}
 
 	::-webkit-scrollbar-thumb {
