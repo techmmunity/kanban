@@ -80,11 +80,11 @@ export const CreateBoard = styled.button`
 	> span {
 		font-size: 2.4rem;
 		font-weight: bold;
+		margin: 1rem;
 	}
 `;
 
 export const PlusIcon = styled(FaPlus)`
 	width: 3rem;
 	height: 3rem;
-	margin-bottom: 1rem;
 `;

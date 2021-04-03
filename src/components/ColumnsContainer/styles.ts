@@ -6,6 +6,7 @@ export const Container = styled.div`
 	min-height: calc(100vh - 5.2rem);
 	height: calc(100vh - 5.2rem);
 	max-height: calc(100vh - 5.2rem);
+	padding-bottom: 0.5rem;
 `;
 
 export const Columns = styled.ul`
@@ -17,7 +18,6 @@ export const Columns = styled.ul`
 	::-webkit-scrollbar {
 		width: 12px;
 		height: 12px;
-		background: ${Colors["scroll-scrollbar"]};
 		border-radius: 3px;
 	}
 
@@ -60,7 +60,7 @@ export const CreateColumn = styled.button`
 	border-radius: 7px;
 	outline: transparent;
 	padding: 1rem;
-	margin: 1rem 0.5rem;
+	margin: 0.5rem;
 	transition: 0.2s background-color ease;
 	cursor: pointer;
 
@@ -82,8 +82,8 @@ export const CreateTask = styled.button`
 	border: 0;
 	border-radius: 3px;
 	outline: transparent;
-	margin-top: 1rem;
 	padding: 1rem;
+	margin: 1rem 0;
 	transition: 0.2s background-color ease, 0.2s color ease;
 	cursor: pointer;
 

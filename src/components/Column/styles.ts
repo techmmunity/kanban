@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Colors } from "assets/colors";
 
 export const Container = styled.li`
-	margin: 1rem 0.5rem;
+	margin: 0.5rem;
 
 	> div {
 		display: flex;
@@ -16,14 +16,14 @@ export const Container = styled.li`
 		max-height: 100%;
 		background: ${Colors["background-column"]};
 		border-radius: 7px;
-		padding: 0 1rem 1rem 1rem;
+		padding: 0 1rem;
 	}
 `;
 
 export const Title = styled.div`
 	display: flex;
 	align-items: center;
-	padding: 1rem 0;
+	padding: 0.8rem 0;
 
 	> span {
 		font-size: 2rem;
