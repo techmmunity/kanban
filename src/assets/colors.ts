@@ -12,8 +12,7 @@ export const Colors = {
 	"background-icon-container": "#16161890",
 	"background-icon-container-hover": "#0079bf",
 	"background-title": "#16161890",
-	scroll: "#f0f0f150",
-	"scroll-scrollbar": "#00000080",
+	scroll: "#5d5d5db3",
 	white: "#ffffff",
 	black: "#000000",
 };
