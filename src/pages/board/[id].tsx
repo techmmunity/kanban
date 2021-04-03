@@ -11,8 +11,9 @@ import { Container, HomeIcon, Title, SettingsIcon } from "styles/pages/Board";
 
 const Board = () => {
 	const router = useRouter();
-	const id = Number(router.query.id) - 1;
-	const board = boards[id];
+	const id = router.query.id;
+	const idBoard = Number(id) - 1;
+	const board = boards[idBoard];
 
 	if (!board) {
 		return <Error statusCode={404} />;

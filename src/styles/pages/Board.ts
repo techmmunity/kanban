@@ -6,38 +6,38 @@ import styled from "styled-components";
 import { Colors } from "assets/colors";
 
 export const Container = styled.main<{ background?: string }>`
+	position: relative;
+	min-height: 100vh;
+	height: 100vh;
+	max-height: 100vh;
+	background: ${({ background }) => background && `url(${background})`};
+	background-position: center;
+	background-size: cover;
+	z-index: 1;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		content: "Kanban";
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: ${`${Colors.white}90`};
+		font-size: 15.625em;
+		font-weight: bold;
+		z-index: -1;
+	}
+
 	> section {
-		position: relative;
-		min-height: 100vh;
-		height: 100vh;
-		max-height: 100vh;
-		background: ${({ background }) => background && `url(${background})`};
-		background-position: center;
-		background-size: cover;
-		z-index: 1;
-
-		&::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			content: "Kanban";
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: ${`${Colors.white}90`};
-			font-size: 15.625em;
-			font-weight: bold;
-			z-index: -1;
-		}
-
 		> header {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			height: 5.2rem;
-			padding: 1rem 0.5rem;
+			padding: 1rem 0;
 			z-index: 1;
 
 			> div {
@@ -48,11 +48,12 @@ export const Container = styled.main<{ background?: string }>`
 					display: flex;
 					align-items: center;
 					justify-content: center;
+					width: 3.8rem;
+					height: 3.8rem;
 					background: ${Colors["background-icon-container"]};
 					color: ${Colors.primary};
 					border-radius: 3px;
 					outline: transparent;
-					padding: 0.7rem;
 					margin: 0 0.5rem;
 					transition: background-color 0.2s ease;
 					cursor: pointer;
@@ -71,18 +72,17 @@ export const Container = styled.main<{ background?: string }>`
 export const HomeIcon = styled(BiHomeAlt)`
 	width: 2.4rem;
 	height: 2.4rem;
-	margin: -0.1rem;
 `;
 
 export const Title = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 3.8rem;
 	background: ${Colors["background-title"]};
 	color: ${Colors.primary};
 	border-radius: 3px;
-	outline: transparent;
-	padding: 0.7rem 1.25rem;
+	padding: 0 1.25rem;
 
 	> h1 {
 		font-size: 1.8rem;
