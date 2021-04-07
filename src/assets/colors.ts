@@ -12,7 +12,11 @@ export const Colors = {
 	"background-icon-container": "#16161890",
 	"background-icon-container-hover": "#0079bf",
 	"background-title": "#16161890",
-	scroll: "#5d5d5db3",
+	"background-input": "#161618",
+	"background-input-change": "#161618",
+	"background-input-change-hover": "#5aac44",
+	"background-input-error": "#e0361ed4",
+	scroll: "#9a938e9e",
 	white: "#ffffff",
 	black: "#000000",
 };
