@@ -26,7 +26,7 @@ export const Container = styled.main<{ background?: string }>`
 		align-items: center;
 		justify-content: center;
 		color: ${`${Colors.white}90`};
-		font-size: 15.625em;
+		font-size: 25rem;
 		font-weight: bold;
 		z-index: -1;
 	}
