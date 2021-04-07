@@ -5,7 +5,7 @@ import { useState, useMemo } from "react";
 import { formatTitle } from "./helpers/formatTitle";
 import { getBoardsToFill } from "./helpers/getBoardsToFill";
 
-import { boards } from "temp/initialData/boards";
+import { boards } from "temp/boards";
 
 import { IBoard } from "types/interfaces/Board";
 
