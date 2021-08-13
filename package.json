@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
-    "next": "^10.1.2",
+    "next": "^11.1.0",
     "next-google-fonts": "^2.1.0",
     "react": "^17.0.1",
     "react-beautiful-dnd": "^13.1.0",
